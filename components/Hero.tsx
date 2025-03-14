@@ -57,8 +57,8 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I'm Abrham, a Next.js-specialized frontend developer based in
-            Ethiopia.{" "}
+            Hi! I&apos;m Abrham, a Next.js-specialized frontend developer based
+            in Ethiopia.{" "}
           </p>
 
           <a href="#about">
