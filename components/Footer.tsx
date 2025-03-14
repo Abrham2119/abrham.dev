@@ -1,24 +1,23 @@
 import { FaLocationArrow } from "react-icons/fa6";
 
 import { socialMedia } from "@/data";
-import MagicButton from "./MagicButton";
-import { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
 import Link from "next/link";
+import { useParams } from "next/navigation";
+import { useEffect, useState } from "react";
+import MagicButton from "./MagicButton";
 
 const Footer = () => {
-  const [copied, setCopied] = useState<boolean>(false)
-  const handleCopy = (username:any) => {
-  
+  const [copied, setCopied] = useState<boolean>(false);
+  const handleCopy = (username: any) => {
     navigator.clipboard.writeText(username);
     setCopied(true);
   };
   useEffect(() => {
     setTimeout(() => {
-      setCopied(false)
+      setCopied(false);
     }, 3000);
-  },[copied])
-  const navigate = useParams
+  }, [copied]);
+  const navigate = useParams;
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       {/* background grid */}
@@ -49,30 +48,32 @@ const Footer = () => {
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2024 Amanuel Tadesse
+          Copyright © 2024 Abrham Zewdu
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
           {socialMedia.map((info) => (
             <div
-            onClick={()=> handleCopy(info.username)}
+              onClick={() => handleCopy(info.username)}
               key={info.id}
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
             >
-              {
-                info.link !== undefined ? 
-                <Link target="_blanck" href={  `${info.link}`}>
+              {info.link !== undefined ? (
+                <Link target="_blanck" href={`${info.link}`}>
                   <img src={info.img} alt="icons" width={20} height={20} />
-              </Link>: <div className="relative" >
-                {
-                  copied &&  <div className="absolute z-1 top-[-60px] left[-50%] bg-gray-800 p-2 rounded-md border border-white"> copied</div>
-                }
-               
-                <img src={info.img} alt="icons" width={20} height={20} />
-              </div> 
-              }
-              
-            
+                </Link>
+              ) : (
+                <div className="relative">
+                  {copied && (
+                    <div className="absolute z-1 top-[-60px] left[-50%] bg-gray-800 p-2 rounded-md border border-white">
+                      {" "}
+                      copied
+                    </div>
+                  )}
+
+                  <img src={info.img} alt="icons" width={20} height={20} />
+                </div>
+              )}
             </div>
           ))}
         </div>

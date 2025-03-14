@@ -57,7 +57,8 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Amanuel, a Full Stack Developer based in Ethiopia.
+            Hi! I'm Abrham, a Next.js-specialized frontend developer based in
+            Ethiopia.{" "}
           </p>
 
           <a href="#about">

@@ -1,4 +1,5 @@
 export const navItems = [
+  { name: "Home", link: "/" },
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
   { name: "Service", link: "#testimonials" },
@@ -75,7 +76,14 @@ export const projects = [
     title: "Besew Online Hybrid Marketplace Mobile App",
     des: "Discover the features of our innovative marketplace app, offering a seamless hybrid shopping experience.",
     img: "/besew.png",
-    iconLists: ["/next.svg","/mobile-app.svg",  "/tail.svg", "/ts.svg", "/nest.svg", "/pulsar.svg"],
+    iconLists: [
+      "/next.svg",
+      "/mobile-app.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/nest.svg",
+      "/pulsar.svg",
+    ],
     link: "https://play.google.com/store/apps/details?id=com.besewonline",
   },
   {
@@ -83,7 +91,14 @@ export const projects = [
     title: "Bizify Spot",
     des: "Enhance your video conferencing with Yoom. Effortlessly connect with colleagues and friends.",
     img: "/bizfy.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/express.svg", "/socket-io-white.svg", "/pulsar.svg"],
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/express.svg",
+      "/socket-io-white.svg",
+      "/pulsar.svg",
+    ],
     link: "https://qa.bizfyspot.com/",
   },
   {
@@ -99,7 +114,13 @@ export const projects = [
     title: "M-POS Mobile App",
     des: "Experience the recreated Apple iPhone 15 Pro website, featuring GSAP animations and Three.js 3D effects.",
     img: "/p4.svg",
-    iconLists: ["/re.svg","mobile-app.svg", "/tail.svg", "/socket-io-white.svg", "nodejs.svg"],
+    iconLists: [
+      "/re.svg",
+      "mobile-app.svg",
+      "/tail.svg",
+      "/socket-io-white.svg",
+      "nodejs.svg",
+    ],
     link: "https://play.google.com/store/apps/details?id=com.addismpos",
   },
   {
@@ -107,7 +128,13 @@ export const projects = [
     title: "Bluenile resort",
     des: "A platform for online tutoring, connecting tutors with parents and students.",
     img: "/bluenile.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/express.svg", "/nodejs.svg"],
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/express.svg",
+      "/nodejs.svg",
+    ],
     link: "https://bluenileresorthotels-avanti.com/",
   },
   {
@@ -115,7 +142,13 @@ export const projects = [
     title: "Warehouse Management System",
     des: "Efficiently manage your inventory with our comprehensive warehouse management system.",
     img: "/warehouse.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg","/nodejs.svg","/socket-io-white.svg"],
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/nodejs.svg",
+      "/socket-io-white.svg",
+    ],
     link: "",
   },
   {
@@ -143,7 +176,6 @@ export const projects = [
     link: "",
   },
 ];
-
 
 export const testimonials = [
   {
@@ -188,7 +220,7 @@ export const companies = [
   {
     id: 2,
     name: "appwrite",
-  
+
     nameImg: "/pulsar.svg",
   },
   {
@@ -215,7 +247,7 @@ export const companies = [
     img: "/dock.svg",
     nameImg: "/dockerName.svg",
   },
-    {
+  {
     id: 7,
     name: "qt",
     img: "/qt.svg",
@@ -258,16 +290,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    link:"http://github.com/1-aminadab"
+    link: "https://gitlab.com/abrhamzewdu2119",
   },
   {
     id: 2,
     img: "/telegram-white.svg",
-    username:"@ready2develop"
+    username: "@NextGen_TS_Coder",
   },
   {
     id: 3,
     img: "/link.svg",
-    link:"www.linkedin.com/in/amanueltadesse-870416232"
+    link: "https://www.linkedin.com/in/abrham-zewdu-13a760232/",
   },
 ];
